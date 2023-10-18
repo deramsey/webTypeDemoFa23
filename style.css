@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+@font-face {
+    font-family: "ghost";
+    src: url("ghostphobia.woff");
+}
+
+@font-face{
+    font-family: "clipart";
+    src: url("halloween-clip.woff");
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #cc7700;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+main{
+    background-color: white;
+    min-width: 400px;
+    width: 35vw;
+    aspect-ratio: 1/1;
+    box-shadow: 0 0 5px #525252;
+    padding: .6em;
+
+}
+
+h2, p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: .6em;
+    font-size: 2vmax;
+}
+
+p{
+    line-height: 1.6vmax;
+}
+
+h1 {
+    font-family: "ghost";
+    font-weight: normal;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: .3em;
+}
+
+h1::before, h1::after{
+    content: " Q ";
+    font-family: "clipart";
+    color: #cc7700;
+}
